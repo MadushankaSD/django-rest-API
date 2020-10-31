@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'my_app',
+    'shop_app',
 ]
 
 REST_FRAMEWORK = {

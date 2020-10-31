@@ -1,13 +1,13 @@
 from rest_framework import serializers
-from .models import Item
+from shop_app.entity.item import Item
 
 
 # (1) Another way to do same task below
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ['id', 'name', 'description', 'qty']
-
+        # fields = ['id', 'name', 'description', 'qty']
+        fields = "__all__"
 
 # (2) This is a one way to do Serialize
 # class ItemSerializer(serializers.Serializer):

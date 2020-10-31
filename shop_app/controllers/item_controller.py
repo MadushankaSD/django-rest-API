@@ -1,9 +1,5 @@
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.parsers import JSONParser
-from .models import Item
-from .serializers import ItemSerializer
-from rest_framework.decorators import api_view
+from shop_app.entity.item import Item
+from shop_app.serializers.item_serializer import ItemSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
