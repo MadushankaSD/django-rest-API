@@ -30,7 +30,7 @@ def item_detali(request, pk):
     try:
         item = Item.objects.get(pk=pk)
 
-    except Item.DoseNotExist:
+    except Item.DoesNotExist:
         return Response(status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from shop_app.entity.model import Customer
+from shop_app.entity.customer import Customer
 
 
 class CustomerSerializer(serializers.ModelSerializer):

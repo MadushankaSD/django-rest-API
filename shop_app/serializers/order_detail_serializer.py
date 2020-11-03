@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from shop_app.entity.order_detail import Order_detail
+from shop_app.entity.order_detail import OrderDetail
 
 
 class OrderDetailSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Order_detail
+        model = OrderDetail
         fields = "__all__"
